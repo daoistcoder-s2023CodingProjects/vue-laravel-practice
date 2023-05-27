@@ -23,7 +23,7 @@ Route::get('/nav', function() {
 });
 
 Route::get('/users', function() {
-    // sleep(2);
+    sleep(2);
     return Inertia::render('Users');
 });
 
