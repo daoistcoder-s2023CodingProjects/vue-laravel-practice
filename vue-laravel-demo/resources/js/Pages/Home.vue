@@ -1,12 +1,6 @@
 <template>
 
-        <h1>Hello, {{ name }}!</h1>
-
-        <p>In this practice, I will use the following frameworks:</p>
-
-        <ul>
-            <li v-for="framework of frameworks" v-text="framework"></li>
-        </ul>
+        <h1>Home Dashboard</h1>
 
         <Nav />
 
@@ -17,14 +11,7 @@
     import Nav from '../Shared/Nav.vue';
 
     export default {
-        props: {
-            name: String,
-            frameworks: Array,
-        },
-
         components: { Nav },
-
-
     }
 </script>
 

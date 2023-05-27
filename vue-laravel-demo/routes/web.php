@@ -15,12 +15,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home', [
-        'name' => 'Jerome Ballena',
-        'frameworks' => [
-            'Laravel', 'Vue', 'Inertia'
-        ]
-    ]);
+    return Inertia::render('Home');
 });
 
 Route::get('/nav', function() {
@@ -28,7 +23,7 @@ Route::get('/nav', function() {
 });
 
 Route::get('/users', function() {
-    sleep(2);
+    // sleep(2);
     return Inertia::render('Users');
 });
 
