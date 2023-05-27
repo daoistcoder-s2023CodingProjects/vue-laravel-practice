@@ -22,3 +22,16 @@ Route::get('/', function () {
         ]
     ]);
 });
+
+Route::get('/links', function() {
+    return Inertia::render('Links');
+});
+
+Route::get('/users', function() {
+    sleep(2);
+    return Inertia::render('Users');
+});
+
+Route::get('/settings', function() {
+    return Inertia::render('Settings');
+});
