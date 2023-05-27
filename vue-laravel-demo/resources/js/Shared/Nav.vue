@@ -1,5 +1,5 @@
 <template>
-    <h1>Links Dashboard</h1>
+    <h1>Nav Dashboard</h1>
 
     <nav>
         <ul>
@@ -8,7 +8,7 @@
             <li><Link href="/settings">Settings</Link></li>
         </ul>
     </nav>
-    
+
 </template>
 
 <script>

@@ -23,8 +23,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/links', function() {
-    return Inertia::render('Links');
+Route::get('/nav', function() {
+    return Inertia::render('Nav');
 });
 
 Route::get('/users', function() {
