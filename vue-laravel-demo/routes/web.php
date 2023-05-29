@@ -25,11 +25,7 @@ Route::get('/nav', function () {
 
 Route::get('/users', function () {
     // sleep(2);
-    $time = Carbon::now()->format('h:i A'); // Format the time as 12-hour with AM/PM
-
-    return Inertia::render('Users', [
-        'time' => $time,
-    ]);
+    return Inertia::render('Users');
 });
 
 Route::get('/settings', function () {

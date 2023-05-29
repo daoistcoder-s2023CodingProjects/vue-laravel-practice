@@ -1,28 +1,15 @@
 <template>
     <h1 class="text-2xl">User Dashboard</h1>
-
-    <div style="margin-top: 400px">
-        <p> The current time is {{ time }}.</p>
-
-
-        <Link
-            href="/users"
-            class="text-blue-500 hover:underline"
-            preserve-scroll
-        >
-            Refresh
-        </Link>
-    </div>
+    <UsersTime />
 </template>
 
 <script>
 import Layout from '../Shared/Layout.vue';
+import UsersTime from '../Shared/UsersTime.vue';
 
 export default {
-    components: {Layout},
+    components: {Layout, UsersTime},
 
     layout: Layout,
-
-    props: { time: String },
 };
 </script>
