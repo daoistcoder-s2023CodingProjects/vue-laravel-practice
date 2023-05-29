@@ -7,11 +7,11 @@
     </Link>
 </template>
 
-<script>
-    export default {
-        props: {
-            active: Boolean
-        },
-    };
+<script setup>
+import { Link } from '@inertiajs/inertia-vue3';
+
+defineProps({
+    active: Boolean
+})
 </script>
 
