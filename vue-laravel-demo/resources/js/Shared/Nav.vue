@@ -1,6 +1,6 @@
 <template>
-    <nav class="mt-6">
-        <ul class="list-none ">
+    <nav class="ml-6">
+        <ul class="flex list-none space-x-4 list-inside">
             <li>
                 <NavLink href="/" :active="$page.component === 'Home'" >Home</NavLink>
             </li>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import {Link} from '@inertiajs/inertia-vue3';
 import NavLink from './NavLink.vue';
 
     export default {
