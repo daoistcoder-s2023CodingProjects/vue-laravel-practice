@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <h1 class="text-4xl font-bold">Settings Dashboard</h1>
+        <h1 class="text-2xl">Settings Dashboard</h1>
     </Layout>
 
 
