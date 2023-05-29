@@ -6,7 +6,7 @@
                     My App
                 </h1>
 
-                <p class="text-sm ml-4">Welcome back <strong>{{ name }}!</strong></p>
+                <p class="text-sm ml-4">Welcome back, <strong>{{ name }}!</strong></p>
            </div>
 
             <Nav />

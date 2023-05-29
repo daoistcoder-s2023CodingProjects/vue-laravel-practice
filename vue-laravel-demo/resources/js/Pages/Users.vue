@@ -22,15 +22,9 @@
 
 <script>
 import Layout from '../Shared/Layout.vue';
-import Nav from '../Shared/Nav.vue';
-import { Link } from '@inertiajs/inertia-vue3';
 
-export default {
-    components: { Layout, Link },
-    props: { time: String }
-}
+    export default {
+        components: { Layout },
+        props: { time: String }
+    }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
