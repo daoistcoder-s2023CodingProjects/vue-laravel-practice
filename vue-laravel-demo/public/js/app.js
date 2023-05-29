@@ -19697,7 +19697,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     href: "/logout",
     method: "post",
     data: {
-      foo: 'bar'
+      foo: 'Logging the User Out'
     },
     as: "button"
   }, {

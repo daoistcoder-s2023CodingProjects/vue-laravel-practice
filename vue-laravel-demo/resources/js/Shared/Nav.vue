@@ -4,7 +4,7 @@
             <li><Link href="/">Home</Link></li>
             <li><Link href="/users">Users</Link></li>
             <li><Link href="/settings">Settings</Link></li>
-            <li><Link href="/logout" method="post" :data="{foo: 'bar'}" as="button">Log Out</Link></li>
+            <li><Link href="/logout" method="post" :data="{foo: 'Logging the User Out'}" as="button">Log Out</Link></li>
         </ul>
     </nav>
 </template>

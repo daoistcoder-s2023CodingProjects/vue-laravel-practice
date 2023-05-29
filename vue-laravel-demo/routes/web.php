@@ -34,3 +34,4 @@ Route::get('/settings', function () {
 Route::post('/logout', function () {
     dd(request('foo'));
 });
+
