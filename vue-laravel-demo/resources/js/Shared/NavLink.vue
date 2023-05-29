@@ -1,6 +1,6 @@
 <template>
     <Link
-        class="text-blue-500"
+        class="text-black-500"
         :class="{'font-bold': active }"
     >
         <slot />

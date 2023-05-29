@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout :name="name">
         <h1 class="text-2xl">Home Dashboard</h1>
     </Layout>
 </template>
@@ -10,6 +10,8 @@ import Nav from '../Shared/Nav.vue';
 
     export default {
         components: { Nav, Layout },
+
+        props: { name: String },
     }
 </script>
 
