@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Carbon;
 use Inertia\Inertia;
 
 /*
@@ -24,8 +25,10 @@ Route::get('/nav', function () {
 
 Route::get('/users', function () {
     // sleep(2);
+    $time = Carbon::now()->format('h:i A'); // Format the time as 12-hour with AM/PM
+
     return Inertia::render('Users', [
-        'time' => now()->toTimeString()
+        'time' => $time,
     ]);
 });
 
