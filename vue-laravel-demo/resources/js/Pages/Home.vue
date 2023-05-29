@@ -1,6 +1,6 @@
 <template>
 
-        <h1>Home Dashboard</h1>
+        <h1 class="text-4xl font-bold">Home Dashboard</h1>
 
         <Nav />
 
