@@ -1,6 +1,11 @@
 <template>
     <Head>
-        <title>My App - Settings</title>
+        <title>Settings</title>
+        <meta
+            type="description"
+            content="Settings Description"
+            head-key="description"
+        >
     </Head>
 
     <h1 class="text-3xl">Settings Dashboard</h1>

@@ -1,6 +1,11 @@
 <template>
     <Head>
-        <title>My App - Home</title>
+        <title>Home</title>
+        <meta
+            type="description"
+            content="Home Description"
+            head-key="description"
+        >
     </Head>
 
     <h1 class="text-3xl">Home Dashboard</h1>
