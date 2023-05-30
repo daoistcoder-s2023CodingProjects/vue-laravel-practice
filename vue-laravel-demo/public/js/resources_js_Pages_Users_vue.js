@@ -71,7 +71,7 @@ var _hoisted_8 = {
 };
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Edit ");
 var _hoisted_10 = {
-  "class": "mt-6"
+  "class": "mt-6 space-x-2"
 };
 var _hoisted_11 = ["innerHTML"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -102,9 +102,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       key: 0,
       href: link.url,
       innerHTML: link.label,
-      "preserve-scroll": ""
+      "preserve-scroll": "",
+      "class": "font-semibold hover:underline"
     }, null, 8 /* PROPS */, ["href", "innerHTML"])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", {
       key: 1,
+      "class": "text-red-400",
       innerHTML: link.label
     }, null, 8 /* PROPS */, _hoisted_11))], 64 /* STABLE_FRAGMENT */);
   }), 256 /* UNKEYED_FRAGMENT */))])], 64 /* STABLE_FRAGMENT */);

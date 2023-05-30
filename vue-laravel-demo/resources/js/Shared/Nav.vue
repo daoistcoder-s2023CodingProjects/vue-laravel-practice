@@ -25,6 +25,3 @@ import NavLink from './NavLink.vue';
     }
 </script>
 
-<style lang="scss" scoped>
-
-</style>

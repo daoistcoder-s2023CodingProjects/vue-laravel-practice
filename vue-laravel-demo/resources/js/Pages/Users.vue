@@ -30,21 +30,23 @@
     </ul>
 
 <!-- Paginator -->
-    <div class="mt-6">
+    <div class="mt-6 space-x-2">
         <template v-for="link in users.links">
             <Link
                 v-if="link.url"
                 :href="link.url"
                 v-html="link.label"
                 preserve-scroll
+
+                class="font-semibold hover:underline"
             />
 
-            <span v-else v-html="link.label"></span>
+            <span class="text-red-400" v-else v-html="link.label"></span>
         </template>
     </div>
 
 </template>
 
 <script setup>
-defineProps({ users: Object })
+defineProps({ users: Object }, { active: Boolean })
 </script>
