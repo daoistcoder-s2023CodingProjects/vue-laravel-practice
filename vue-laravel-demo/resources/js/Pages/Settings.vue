@@ -1,6 +1,5 @@
 <template>
-    <Head>
-        <title>Settings</title>
+    <Head title="Settings">
         <meta
             type="description"
             content="Settings Description"
@@ -12,6 +11,6 @@
 </template>
 
 <script setup>
-import { Head } from "@inertiajs/inertia-vue3"
+
 </script>
 
