@@ -25,7 +25,9 @@ Route::get('/nav', function () {
 
 Route::get('/users', function () {
     return Inertia::render('Users', [
-        'users' => \App\Models\User::all() //Flag
+        'users' => \App\Models\User::all()->map(fn($user) => [
+            'name' => $user->name
+        ])
     ]);
 });
 
