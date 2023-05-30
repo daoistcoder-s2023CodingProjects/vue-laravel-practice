@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Carbon;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +24,9 @@ Route::get('/nav', function () {
 });
 
 Route::get('/users', function () {
-    // sleep(2);
-    return Inertia::render('Users');
+    return Inertia::render('Users', [
+        'users' => \App\Models\User::all() //Flag
+    ]);
 });
 
 Route::get('/settings', function () {
