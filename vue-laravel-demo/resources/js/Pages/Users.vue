@@ -8,11 +8,10 @@
         >
     </Head>
 
-    <h1 class="text-3xl">User Dashboard</h1>
-    <UsersTime />
+    <h1 class="text-3xl">User</h1>
+
 </template>
 
 <script setup>
 import { Head } from "@inertiajs/inertia-vue3"
-import UsersTime from '../Shared/UsersTime.vue';
 </script>
