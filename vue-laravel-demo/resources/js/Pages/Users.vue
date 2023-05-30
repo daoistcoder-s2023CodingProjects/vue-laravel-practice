@@ -9,16 +9,33 @@
 
     <h1 class="text-3xl">User</h1>
 
-    <ul>
-        <li
-            v-for="user in users"
+    <ul role="list" class="divide-y divide-gray-400">
+        <li  v-for="user in users"
             :key="user.id"
-            v-text="user.name"
-        />
+            class="flex justify-between gap-x-6 py-5"
+        >
+            <div class="flex gap-x-4">
+                <div class="min-w-0 flex-auto">
+                    <p class="text-sm font-semibold leading-6 text-gray-900">{{ user.name }}</p>
+                    <p class="mt-1 truncate text-xs leading-5 text-gray-500">{{ user.email }}</p>
+                </div>
+            </div>
+
+            <div class="hidden sm:flex sm:flex-col sm:items-end">
+               <Link :href="`/users/${user.id}/edit`" class="text-indigo-600 hover:text-indigo-900 hover:underline">
+                    Edit
+               </Link>
+            </div>
+        </li>
     </ul>
+
+
+
 
 </template>
 
 <script setup>
+import { Link } from '@inertiajs/inertia-vue3';
+
 defineProps({ users: Array })
 </script>
