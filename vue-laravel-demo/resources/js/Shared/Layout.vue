@@ -15,17 +15,18 @@
 
     <section class="p-6">
         <div class="max-w-3xl mx-auto">
-
+            <LayoutMusic />
             <slot />
         </div>
     </section>
 </template>
 
 <script>
+import LayoutMusic from './LayoutMusic.vue';
 import Nav from './Nav.vue';
 
 export default {
-    components: { Nav },
+    components: { Nav, LayoutMusic },
 
     computed: {
         name() {
