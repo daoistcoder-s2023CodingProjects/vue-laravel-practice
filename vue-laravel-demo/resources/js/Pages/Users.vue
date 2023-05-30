@@ -10,7 +10,7 @@
     <h1 class="text-3xl">User</h1>
 
     <ul role="list" class="divide-y divide-gray-400">
-        <li  v-for="user in users"
+        <li  v-for="user in users.data"
             :key="user.id"
             class="flex justify-between gap-x-6 py-5"
         >
@@ -29,13 +29,22 @@
         </li>
     </ul>
 
+<!-- Paginator -->
+    <div class="mt-6">
+        <template v-for="link in users.links">
+            <Link
+                v-if="link.url"
+                :href="link.url"
+                v-html="link.label"
+                preserve-scroll
+            />
 
-
+            <span v-else v-html="link.label"></span>
+        </template>
+    </div>
 
 </template>
 
 <script setup>
-import { Link } from '@inertiajs/inertia-vue3';
-
-defineProps({ users: Array })
+defineProps({ users: Object })
 </script>
