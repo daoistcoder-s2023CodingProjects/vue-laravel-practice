@@ -1,5 +1,5 @@
 <template>
-    <h1 class="text-2xl">Home Dashboard</h1>
+    <h1 class="text-3xl">Home Dashboard</h1>
 </template>
 
 <script>

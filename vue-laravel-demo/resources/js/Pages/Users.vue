@@ -1,15 +1,8 @@
 <template>
-    <h1 class="text-2xl">User Dashboard</h1>
+    <h1 class="text-3xl">User Dashboard</h1>
     <UsersTime />
 </template>
 
-<script>
-import Layout from '../Shared/Layout.vue';
+<script setup>
 import UsersTime from '../Shared/UsersTime.vue';
-
-export default {
-    components: {Layout, UsersTime},
-
-    layout: Layout,
-};
 </script>
