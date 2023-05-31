@@ -1,7 +1,15 @@
 <?php
 
+// root controllers
+use App\Http\Controllers\Auth\LoginController;
+
+// root models
 use \App\Models\User;
+
+// built-in libraries
 use Illuminate\Support\Facades\Route;
+
+// ext. frameworks & libraries
 use Inertia\Inertia;
 
 // login endPoint
