@@ -70,6 +70,8 @@ let props = defineProps({
 
 let search = ref(props.filters.search);
 
+// debounce will wait until your input is done, then will run the ()
+// throttle will run the () in the middle of input, per the delay
 watch(search, debounce(function(value) {
     console.log('triggered');
 
@@ -81,5 +83,5 @@ watch(search, debounce(function(value) {
             replace: true,
         }
     );
-}, 500));
+}, 300));
 </script>

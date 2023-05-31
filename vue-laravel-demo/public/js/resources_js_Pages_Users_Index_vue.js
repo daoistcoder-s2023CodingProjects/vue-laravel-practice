@@ -31,6 +31,9 @@ __webpack_require__.r(__webpack_exports__);
     expose();
     var props = __props;
     var search = (0,vue__WEBPACK_IMPORTED_MODULE_1__.ref)(props.filters.search);
+
+    // debounce will wait until your input is done, then will run the ()
+    // throttle will run the () in the middle of input, per the delay
     (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(search, lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default()(function (value) {
       console.log('triggered');
       _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_2__.Inertia.get("/users", {
@@ -39,7 +42,7 @@ __webpack_require__.r(__webpack_exports__);
         preserveState: true,
         replace: true
       });
-    }, 500));
+    }, 300));
     var __returned__ = {
       props: props,
       search: search,
