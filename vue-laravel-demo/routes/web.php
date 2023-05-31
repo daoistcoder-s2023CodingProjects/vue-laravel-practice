@@ -7,6 +7,8 @@ use App\Http\Controllers\Auth\LoginController;
 use \App\Models\User;
 
 // built-in libraries
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 // ext. frameworks & libraries
@@ -43,7 +45,12 @@ Route::middleware('auth')->group(function () {
                     'name' => $user->name,
                     'email' => $user->email,
                 ]),
-            'filters' => Request::only(['search'])
+            'filters' => Request::only(['search']),
+
+            // Laravel properties to make a elevated authorization
+            'can' => [
+                'createUser' => Hash::check('admin', Auth::user()->password)
+            ]
         ]);
     });
 

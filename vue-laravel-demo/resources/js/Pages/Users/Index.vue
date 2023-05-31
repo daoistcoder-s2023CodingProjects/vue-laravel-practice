@@ -11,6 +11,7 @@
             <h1 class="text-3xl font-semibold">User</h1>
 
             <Link
+                v-if="can.createUser"
                 href="/users/create"
                 class="font-semibold text-blue-500 text-sm ml-4 mt-2 border-2 border-gray-300 bg-blue-100 px-2 rounded-lg hover:bg-blue-200 hover:text-blue-800"
             >
@@ -44,6 +45,7 @@
 
             <div class="hidden sm:flex sm:flex-col sm:items-end">
                 <Link
+                    v-if="can.createUser"
                     :href="`/users/${user.id}/edit`"
                     class="text-indigo-600 hover:text-indigo-900 hover:underline"
                 >
@@ -66,6 +68,7 @@ import debounce from "lodash/debounce";
 let props = defineProps({
     users: Object,
     filters: Object,
+    can: Object,
 });
 
 let search = ref(props.filters.search);
