@@ -189,7 +189,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Users ");
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Settings ");
 var _hoisted_5 = {
-  "class": "font-semibold text-blue-500 text-sm ml-4 border-2 border-gray-300 bg-blue-100 px-2 py-1 rounded-lg hover:bg-blue-200 hover:text-blue-800"
+  "class": "font-semibold text-blue-500 text-sm ml-4 border-2 border-gray-300 bg-blue-100 px-2 py-1 rounded-lg hover:bg-red-300"
 };
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out ");
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -247,7 +247,7 @@ __webpack_require__.r(__webpack_exports__);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_Link, {
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["text-black hover:underline", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["text-black", {
       'font-bold underline': $props.active
     }])
   }, {
