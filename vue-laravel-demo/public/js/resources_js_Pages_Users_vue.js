@@ -141,7 +141,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       href: link.url,
       innerHTML: link.label,
       "preserve-scroll": "",
-      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["px-1", link.url ? '' : 'text-gray-500'])
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["px-1", {
+        'text-gray-500': !link.url,
+        'font-bold underline': link.active
+      }])
     }, null, 8 /* PROPS */, ["href", "innerHTML", "class"]);
   }), 256 /* UNKEYED_FRAGMENT */))]);
 }
