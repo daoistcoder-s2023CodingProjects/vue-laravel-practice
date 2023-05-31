@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import Paginator from '../Shared/Paginator.vue';
+import Paginator from '../../Shared/Paginator.vue';
 import { ref, watch } from 'vue';
 import {Inertia} from "@inertiajs/inertia";
 

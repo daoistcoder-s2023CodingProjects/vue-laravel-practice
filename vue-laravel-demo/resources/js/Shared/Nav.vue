@@ -6,7 +6,7 @@
             </li>
 
             <li>
-                <NavLink href="/users?foo=bar&baz=buzz" :active="$page.component === 'Users'" >Users</NavLink>
+                <NavLink href="/users" :active="$page.url.startsWith('/users')" >Users</NavLink>
             </li>
 
             <li>
