@@ -31,11 +31,13 @@ Route::get('/users', function () {
                 $query->where('name', 'like', "%{$search}%");
             })
             ->paginate(10)
+            ->withQueryString()
             ->through(fn($user) => [
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
-            ])
+            ]),
+        'filters' => Request::only(['search'])
     ]);
 });
 
