@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Middleware;
 
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class HandleInertiaRequests extends Middleware
 {
@@ -39,17 +40,15 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         $time = Carbon::now()->format('h:i:s A');
+
         return array_merge(parent::share($request), [
-
-
-            'auth' => [
+            'auth' => Auth::user() ? [
                 'user' => [
-                    'name' => 'Jerome Ballena'
+                    'name' => Auth::user()->name
                 ]
-            ] ,
+            ] : null,
 
             'time' =>  $time,
-
         ]);
     }
 }

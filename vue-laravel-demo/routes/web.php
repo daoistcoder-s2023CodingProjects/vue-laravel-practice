@@ -71,7 +71,7 @@ Route::middleware('auth')->group(function () {
         return Inertia::render('Settings');
     });
 
-    Route::post('/logout', function () {
-        dd(request('foo'));
-    });
+    // Route::post('/logout', function () {
+    //     dd(request('foo'));
+    // });
 });

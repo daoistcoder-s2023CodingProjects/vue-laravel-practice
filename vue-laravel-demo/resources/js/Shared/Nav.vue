@@ -2,15 +2,39 @@
     <nav>
         <ul class="flex space-x-6">
             <li>
-                <NavLink href="/" :active="$page.component === 'Home'" >Home</NavLink>
+                <NavLink href="/" :active="$page.component === 'Home'" >
+                    Home
+                </NavLink>
             </li>
 
             <li>
-                <NavLink href="/users" :active="$page.url.startsWith('/users')" >Users</NavLink>
+                <NavLink href="/users" :active="$page.url.startsWith('/users')" >
+                    Users
+                </NavLink>
             </li>
 
             <li>
-                <NavLink href="/settings" :active="$page.component === 'Settings'" >Settings</NavLink>
+                <NavLink href="/settings" :active="$page.component === 'Settings'" >
+                    Settings
+                </NavLink>
+            </li>
+
+            <li
+                class="
+                    font-semibold
+                    text-blue-500
+                    text-sm ml-4
+                    border-2
+                    border-gray-300
+                    bg-blue-100
+                    px-2
+                    py-1
+                    rounded-lg
+                    hover:bg-blue-200 hover:text-blue-800"
+            >
+                <NavLink href="/logout" method="post">
+                    Log Out
+                </NavLink>
             </li>
 
         </ul>
