@@ -1,7 +1,7 @@
 <template>
     <Head title="Create User" />
 
-    <h1 class="text-3xl">Create New User</h1>
+    <h1 class="text-2xl font-semibold">Create New User</h1>
 
     <form @submit.prevent="submit" class="max-w-md mx-auto mt-8">
         <div class="mb-6">
@@ -20,6 +20,12 @@
                 id="name"
                 required
             />
+            <div
+                v-if="errors.name"
+                v-text="errors.name"
+                class="text-red-500 text-xs mt-1"
+            >
+            </div>
         </div>
 
         <div class="mb-6">
@@ -38,6 +44,12 @@
                 id="email"
                 required
             />
+            <div
+                v-if="errors.email"
+                v-text="errors.email"
+                class="text-red-500 text-xs mt-1"
+            >
+            </div>
         </div>
 
         <div class="mb-6">
@@ -56,6 +68,12 @@
                 id="password"
                 required
             />
+            <div
+                v-if="errors.password"
+                v-text="errors.password"
+                class="text-red-500 text-xs mt-1"
+            >
+            </div>
         </div>
 
         <div class="mb-6">
@@ -71,7 +89,11 @@
 
 <script setup>
 import { reactive } from "vue";
-import {Inertia} from "@inertiajs/inertia";
+import { Inertia } from "@inertiajs/inertia";
+
+defineProps({
+    errors: Object
+});
 
 let form = reactive({
     name: "",
@@ -80,6 +102,6 @@ let form = reactive({
 });
 
 let submit = () => {
-    Inertia.post('/users', form);
+    Inertia.post("/users", form);
 };
 </script>
