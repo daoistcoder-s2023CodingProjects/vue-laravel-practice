@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "grid place-items-center min-h-screen bg-green-50"
+  "class": "grid place-items-center min-h-screen"
 };
 var _hoisted_2 = {
   "class": "bg-white p-8 rounded-xl max-w-md mx-auto border-2 border-gray-200"
@@ -97,7 +97,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $setup.form.email = $event;
     }),
-    "class": "border border p-2 w-full bg-gray-50 rounded",
+    "class": "border-2 p-2 w-full bg-gray-50 rounded",
     type: "email",
     name: "email",
     id: "email",
@@ -110,7 +110,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $setup.form.password = $event;
     }),
-    "class": "border border p-2 w-full bg-gray-50 rounded",
+    "class": "border-2 p-2 w-full bg-gray-50 rounded",
     type: "password",
     name: "password",
     id: "password",

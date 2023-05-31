@@ -7,7 +7,7 @@
             head-key="description"
         >
     </Head>
-    <section class="p-6 bg-gray-200">
+    <section class="p-6 bg-green-100">
         <header class="flex justify-between">
             <div class="flex items-center">
                 <h1 class="font-bold text-lg">

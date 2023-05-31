@@ -1,7 +1,7 @@
 <template>
     <Head title="Login Page"></Head>
 
-    <main class="grid place-items-center min-h-screen bg-green-50">
+    <main class="grid place-items-center min-h-screen">
         <section
             class="bg-white p-8 rounded-xl max-w-md mx-auto border-2 border-gray-200"
         >
@@ -18,7 +18,7 @@
 
                     <input
                         v-model="form.email"
-                        class="border border p-2 w-full bg-gray-50 rounded"
+                        class="border-2 p-2 w-full bg-gray-50 rounded"
                         type="email"
                         name="email"
                         id="email"
@@ -41,7 +41,7 @@
 
                     <input
                         v-model="form.password"
-                        class="border border p-2 w-full bg-gray-50 rounded"
+                        class="border-2 p-2 w-full bg-gray-50 rounded"
                         type="password"
                         name="password"
                         id="password"

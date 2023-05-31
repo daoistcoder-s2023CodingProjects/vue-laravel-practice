@@ -30,7 +30,7 @@
                     px-2
                     py-1
                     rounded-lg
-                    hover:bg-red-300"
+                    hover:bg-green-400"
             >
                 <NavLink href="/logout" method="post">
                     Log Out

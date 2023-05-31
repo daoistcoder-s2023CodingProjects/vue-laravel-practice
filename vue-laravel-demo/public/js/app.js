@@ -103,7 +103,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "head-key": "description"
 }, null, -1 /* HOISTED */);
 var _hoisted_3 = {
-  "class": "p-6 bg-gray-200"
+  "class": "p-6 bg-green-100"
 };
 var _hoisted_4 = {
   "class": "flex justify-between"
@@ -189,7 +189,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Users ");
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Settings ");
 var _hoisted_5 = {
-  "class": "font-semibold text-blue-500 text-sm ml-4 border-2 border-gray-300 bg-blue-100 px-2 py-1 rounded-lg hover:bg-red-300"
+  "class": "font-semibold text-blue-500 text-sm ml-4 border-2 border-gray-300 bg-blue-100 px-2 py-1 rounded-lg hover:bg-green-400"
 };
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Log Out ");
 function render(_ctx, _cache, $props, $setup, $data, $options) {
