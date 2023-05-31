@@ -26,7 +26,7 @@
                     text-sm ml-4
                     border-2
                     border-gray-300
-                    bg-blue-100
+                    bg-blue-50
                     px-2
                     py-1
                     rounded-lg

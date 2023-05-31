@@ -1,7 +1,7 @@
 <template>
     <Link
         class="text-black"
-        :class="{'font-bold underline': active }"
+        :class="{'font-bold': active }"
     >
         <slot />
     </Link>
