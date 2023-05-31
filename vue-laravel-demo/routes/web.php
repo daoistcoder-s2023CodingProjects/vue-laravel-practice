@@ -14,6 +14,9 @@ use Inertia\Inertia;
 
 // login endPoint
 Route::get('/login',[LoginController::class, 'create'])->name('login');
+// login post endPoint
+Route::post('/login',[LoginController::class, 'store']);
+
 
 // auth endPoint
 Route::middleware('auth')->group(function () {
