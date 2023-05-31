@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 // ext. frameworks & libraries
 use Inertia\Inertia;
 
-// login endPoint
+// logIn endPoint
 Route::get('/login',[LoginController::class, 'create'])->name('login');
-// login post endPoint
+// logIn post endPoint
 Route::post('/login',[LoginController::class, 'store']);
+// logOut post endPoint
+Route::post('/logout',[LoginController::class, 'destroy']);
 
 
 // auth endPoint
@@ -71,7 +73,4 @@ Route::middleware('auth')->group(function () {
         return Inertia::render('Settings');
     });
 
-    // Route::post('/logout', function () {
-    //     dd(request('foo'));
-    // });
 });
