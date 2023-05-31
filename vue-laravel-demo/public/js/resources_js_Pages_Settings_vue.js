@@ -19,7 +19,7 @@ var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "head-key": "description"
 }, null, -1 /* HOISTED */);
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
-  "class": "text-3xl"
+  "class": "text-3xl font-semibold"
 }, "Settings", -1 /* HOISTED */);
 
 function render(_ctx, _cache) {

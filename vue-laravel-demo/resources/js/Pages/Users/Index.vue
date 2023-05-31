@@ -8,7 +8,7 @@
     </Head>
     <div class="flex justify-between mb-6">
         <div class="flex items-center">
-            <h1 class="text-3xl">User</h1>
+            <h1 class="text-3xl font-semibold">User</h1>
 
             <Link
                 href="/users/create"
@@ -21,7 +21,7 @@
             v-model="search"
             type="text"
             placeholder="Search..."
-            class="border px-2 rounded-lg"
+            class="border-2 border-gray-400 px-2 mt-3 rounded-lg"
         />
     </div>
 
