@@ -18,7 +18,7 @@ class UserPolicy
      */
     public function create(User $user)
     {
-        return $user->name === 'Admin';
+        return $user->name === 'Admin Test1';
     }
 
     /**
@@ -30,6 +30,8 @@ class UserPolicy
      */
     public function update(User $user, User $model)
     {
-        //
+       // trying to simulate how orginizational authorization works
+        // return (bool) mt_rand(0, 1);
+        return $user->name === 'Admin Test1';
     }
 }

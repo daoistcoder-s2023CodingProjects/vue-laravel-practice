@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 // logIn endPoint
-Route::get('/login',[LoginController::class, 'create'])->name('login');
+Route::get('/login', [LoginController::class, 'create'])->name('login');
 // logIn post endPoint
-Route::post('/login',[LoginController::class, 'store']);
+Route::post('/login', [LoginController::class, 'store']);
 // logOut post endPoint
-Route::post('/logout',[LoginController::class, 'destroy']);
+Route::post('/logout', [LoginController::class, 'destroy']);
 
 
 // auth endPoint
@@ -43,7 +43,11 @@ Route::middleware('auth')->group(function () {
                     'id' => $user->id,
                     'name' => $user->name,
                     'email' => $user->email,
+                    'can' => [
+                        'update' => Auth::user()->can('update', $user)
+                    ]
                 ]),
+
             'filters' => Request::only(['search']),
 
             // Laravel properties to make a elevated authorization
@@ -56,7 +60,7 @@ Route::middleware('auth')->group(function () {
     // endpoint for create route
     Route::get('/users/create', function () {
         return Inertia::render('Users/Create');
-    })->middleware('can:create,App\Models\User');
+    })->can('create', 'App\Models\User');
 
     Route::post('/users', function () {
         //trottle submit
@@ -79,5 +83,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/settings', function () {
         return Inertia::render('Settings');
     });
-
 });

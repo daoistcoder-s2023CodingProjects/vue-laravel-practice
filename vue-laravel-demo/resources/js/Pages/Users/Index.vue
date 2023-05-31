@@ -45,7 +45,7 @@
 
             <div class="hidden sm:flex sm:flex-col sm:items-end">
                 <Link
-                    v-if="can.createUser"
+                    v-if="user.can.update"
                     :href="`/users/${user.id}/edit`"
                     class="text-indigo-600 hover:text-indigo-900 hover:underline"
                 >
