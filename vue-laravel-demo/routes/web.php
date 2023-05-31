@@ -46,6 +46,9 @@ Route::get('/users/create', function () {
 });
 
 Route::post('/users', function () {
+    //trottle submit
+    // sleep(3);
+
     //validate the request
     $attributes = Request::validate([
         'name' => 'required',
