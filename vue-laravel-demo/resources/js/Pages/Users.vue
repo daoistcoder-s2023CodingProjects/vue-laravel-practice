@@ -30,23 +30,11 @@
     </ul>
 
 <!-- Paginator -->
-    <div class="mt-6 space-x-2">
-        <template v-for="link in users.links">
-            <Link
-                v-if="link.url"
-                :href="link.url"
-                v-html="link.label"
-                preserve-scroll
-
-                class="font-semibold hover:underline"
-            />
-
-            <span class="text-red-400" v-else v-html="link.label"></span>
-        </template>
-    </div>
-
+   <Paginator :links="users.links" class="mt-6"/>
 </template>
 
 <script setup>
-defineProps({ users: Object }, { active: Boolean })
+import Paginator from '../Shared/Paginator.vue';
+
+defineProps({ users: Object })
 </script>
