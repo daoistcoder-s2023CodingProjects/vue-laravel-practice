@@ -66,6 +66,7 @@
                 type="password"
                 name="password"
                 id="password"
+                required
             />
             <div
                 v-if="form.errors.password"

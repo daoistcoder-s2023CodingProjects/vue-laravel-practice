@@ -154,7 +154,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "border border-gray-400 p-2 w-full",
     type: "password",
     name: "password",
-    id: "password"
+    id: "password",
+    required: ""
   }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.password]]), $setup.form.errors.password ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
     key: 0,
     textContent: (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.form.errors.password),
