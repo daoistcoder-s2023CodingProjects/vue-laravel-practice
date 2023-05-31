@@ -8,7 +8,6 @@ use \App\Models\User;
 
 // built-in libraries
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 // ext. frameworks & libraries
@@ -49,14 +48,15 @@ Route::middleware('auth')->group(function () {
 
             // Laravel properties to make a elevated authorization
             'can' => [
-                'createUser' => Hash::check('admin', Auth::user()->password)
+                'createUser' => Auth::user()->can('create', User::class)
             ]
         ]);
     });
 
+    // endpoint for create route
     Route::get('/users/create', function () {
         return Inertia::render('Users/Create');
-    });
+    })->middleware('can:create,App\Models\User');
 
     Route::post('/users', function () {
         //trottle submit
