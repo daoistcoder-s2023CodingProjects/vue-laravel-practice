@@ -6,8 +6,12 @@
             head-key="description"
         >
     </Head>
+    <div class="flex justify-between mb-6">
+        <h1 class="text-3xl">User</h1>
 
-    <h1 class="text-3xl">User</h1>
+        <input v-model="search" type="text" placeholder="Search..."  class="border px-2 rounded-lg"/>
+    </div>
+
 
     <ul role="list" class="divide-y divide-gray-400">
         <li  v-for="user in users.data"
@@ -35,6 +39,16 @@
 
 <script setup>
 import Paginator from '../Shared/Paginator.vue';
+import { ref, watch } from 'vue';
+import {Inertia} from "@inertiajs/inertia";
 
 defineProps({ users: Object })
+
+let search = ref('');
+
+watch(search, value => {
+    Inertia.get('/users', { search: value }, {
+        preserveState: true
+    });
+})
 </script>
